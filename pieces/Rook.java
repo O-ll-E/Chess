@@ -13,10 +13,12 @@ public class Rook extends Pieces{
   public Rook(Position pos){
     super(pos);
     this.type = Type.ROOK;
+    this.score = 5;
   }
   public Rook(int x, int y){
     super(x, y);
     this.type = Type.ROOK;
+    this.score = 5;
   }
 
   /**

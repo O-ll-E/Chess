@@ -4,7 +4,6 @@ import chess.utility.*;
 public abstract class Pieces{
 //-------------Variables----------------
   int score;
-  //  TODO: add score for all Pieces
   int moveCount = 0;
   Position position;
   Type type;

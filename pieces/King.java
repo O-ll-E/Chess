@@ -13,10 +13,12 @@ public class King extends Pieces{
   public King(Position pos){
     super(pos);
     this.type = Type.KING;
+    this.score = 300;
   }
   public King(int x, int y){
     super(x, y);
     this.type = Type.KING;
+    this.score = 300;
   }
   public boolean isValidMove(Position newPos){
     int xdif=Math.abs(newPos.getPosx()-position.getPosx());
