@@ -9,6 +9,15 @@ public class Position{
     this.x = x;
     this.y = y;
   }
+  public static Position add(Position pos1, Position pos2){
+    return new Position(pos1.getPosx()+pos2.getPosy(), pos2.getPosy()+pos1.getPosy());
+  }
+  public static Position substract(Position pos1, Position pos2){
+    return new Position(pos1.getPosx()-pos2.getPosy(), pos1.getPosy()-pos2.getPosy());
+  }
+  public int combine(){
+    return x+y;
+  }
   //Getters&Setters
   public int getPosx(){
     return this.x;
