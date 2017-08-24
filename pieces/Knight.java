@@ -13,12 +13,12 @@ public class Knight extends Pieces{
   public Knight(Position pos){
     super(pos);
     this.type = Type.KNIGHT;
-    this.score = 2;
+    this.score = 3;
   }
   public Knight(int x, int y){
     super(x, y);
     this.type = Type.KNIGHT;
-    this.score = 2;
+    this.score = 3;
   }
 
   public boolean isValidMove(Position newPos){

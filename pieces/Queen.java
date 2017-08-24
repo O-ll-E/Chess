@@ -13,12 +13,12 @@ public class Queen extends Pieces{
   public Queen(Position pos){
     super(pos);
     this.type = Type.QUEEN;
-    this.score = 10;
+    this.score = 9;
   }
   public Queen(int x, int y){
     super(x, y);
     this.type = Type.QUEEN;
-    this.score = 10;
+    this.score = 9;
   }
 
   /**

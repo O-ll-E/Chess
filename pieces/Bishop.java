@@ -13,12 +13,12 @@ public class Bishop extends Pieces{
   public Bishop(Position pos){
     super(pos);
     this.type = Type.BISHOP;
-    this.score = 2;
+    this.score = 3;
   }
   public Bishop(int x, int y){
     super(x, y);
     this.type = Type.BISHOP;
-    this.score = 2;
+    this.score = 3;
   }
 
   /**
