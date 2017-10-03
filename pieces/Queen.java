@@ -12,13 +12,13 @@ public class Queen extends Pieces{
   */
   public Queen(Position pos){
     super(pos);
-    this.type = Type.QUEEN;
-    this.score = 9;
+    setType(Type.QUEEN);
+    setScore(9);
   }
   public Queen(int x, int y){
     super(x, y);
-    this.type = Type.QUEEN;
-    this.score = 9;
+    setType(Type.QUEEN);
+    setScore(9);
   }
 
   /**
@@ -28,8 +28,8 @@ public class Queen extends Pieces{
    *                        if false: the move is not valid
   */
   public boolean isValidMove(Position newPos){
-    Bishop tempB = new Bishop(position);
-    Rook tempR = new Rook(position);
+    Bishop tempB = new Bishop(getPos());
+    Rook tempR = new Rook(getPos());
     return (tempR.isValidMove(newPos) || tempB.isValidMove(newPos));
   }
 }

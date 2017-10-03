@@ -12,13 +12,13 @@ public class Pawn extends Pieces{
   */
   public Pawn(Position pos){
     super(pos);
-    this.type = Type.PAWN;
-    this.score = 1;
+    setType(Type.PAWN);
+    setScore(1);
   }
   public Pawn(int x, int y){
     super(x, y);
-    this.type = Type.PAWN;
-    this.score = 1;
+    setType(Type.PAWN);
+    setScore(1);
   }
   // TODO: add isValidMove()
 }

@@ -12,18 +12,18 @@ public class Knight extends Pieces{
   */
   public Knight(Position pos){
     super(pos);
-    this.type = Type.KNIGHT;
-    this.score = 3;
+    setType(Type.KNIGHT);
+    setScore(3);
   }
   public Knight(int x, int y){
     super(x, y);
-    this.type = Type.KNIGHT;
-    this.score = 3;
+    setType(Type.KNIGHT);
+    setScore(3);
   }
 
   public boolean isValidMove(Position newPos){
-    int xdif=Math.abs(newPos.getPosx()-position.getPosx());
-    int ydif=Math.abs(newPos.getPosy()-position.getPosy());
+    int xdif=Math.abs(newPos.getPosx()-getPos().getPosx());
+    int ydif=Math.abs(newPos.getPosy()-getPos().getPosy());
     if (xdif==2||ydif==2) {
       return (xdif==1||ydif==1);
     }

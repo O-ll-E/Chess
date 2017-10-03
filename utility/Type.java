@@ -1,5 +1,5 @@
 package chess.utility;
 
 public enum Type{
-  BISHOP,KING,KNIGHT,PAWN,QUEEN,ROOK
+  PAWN, KNIGHT, BISHOP, ROOK, QUEEN, KING
 }

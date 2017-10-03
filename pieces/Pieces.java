@@ -3,10 +3,10 @@ import chess.utility.*;
 
 public abstract class Pieces{
 //-------------Variables----------------
-  int score;
-  int moveCount = 0;
-  Position position;
-  Type type;
+  private int score;
+  private int moveCount = 0;
+  private Position position;
+  private Type type;
   //Type,Player,...
 
   /**
@@ -45,12 +45,37 @@ public abstract class Pieces{
   }
 
   /**
+   * Sets the Position of a Piece
+   * @param type  new Position
+  */
+  public void setType(Type type){
+    this.type=type;
+  }
+
+  /**
    * Gets the Position of a Piece
    * @return position  Position of the Piece is returned
   */
   public Type getType(){
     return type;
   }
+
+  /**
+   * Sets the score of a Piece
+   * @param score  new score
+  */
+  public void setScore(int score){
+    this.score=score;
+  }
+
+  /**
+   * Gets the score of a Piece
+   * @return score  score of the Piece is returned
+  */
+  public int getScore(){
+    return score;
+  }
+
 
   /**
    * Gets the moveCount of a Piece

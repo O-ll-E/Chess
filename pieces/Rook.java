@@ -12,13 +12,13 @@ public class Rook extends Pieces{
   */
   public Rook(Position pos){
     super(pos);
-    this.type = Type.ROOK;
-    this.score = 5;
+    setType(Type.ROOK);
+    setScore(5);
   }
   public Rook(int x, int y){
     super(x, y);
-    this.type = Type.ROOK;
-    this.score = 5;
+    setType(Type.ROOK);
+    setScore(5);
   }
 
   /**
@@ -28,8 +28,8 @@ public class Rook extends Pieces{
    *                        if false: the move is not valid
   */
   public boolean isValidMove(Position newPos){
-    int xdif=Math.abs(newPos.getPosx()-position.getPosx());
-    int ydif=Math.abs(newPos.getPosy()-position.getPosy());
+    int xdif=Math.abs(newPos.getPosx()-getPos().getPosx());
+    int ydif=Math.abs(newPos.getPosy()-getPos().getPosy());
     if (xdif==0||ydif==0) {
       return (xdif!=0||ydif!=0);
     }

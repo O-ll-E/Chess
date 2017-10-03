@@ -12,13 +12,13 @@ public class Bishop extends Pieces{
   */
   public Bishop(Position pos){
     super(pos);
-    this.type = Type.BISHOP;
-    this.score = 3;
+    setType(Type.BISHOP);
+    setScore(3);
   }
   public Bishop(int x, int y){
     super(x, y);
-    this.type = Type.BISHOP;
-    this.score = 3;
+    setType(Type.BISHOP);
+    setScore(3);
   }
 
   /**
@@ -28,8 +28,8 @@ public class Bishop extends Pieces{
    *                        if false: the move is not valid
   */
   public boolean isValidMove(Position newPos){
-    int xdif=Math.abs(newPos.getPosx()-position.getPosx());
-    int ydif=Math.abs(newPos.getPosy()-position.getPosy());
+    int xdif=Math.abs(newPos.getPosx()-getPos().getPosx());
+    int ydif=Math.abs(newPos.getPosy()-getPos().getPosy());
     return (xdif == ydif);
   }
 }

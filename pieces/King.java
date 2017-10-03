@@ -12,17 +12,17 @@ public class King extends Pieces{
   */
   public King(Position pos){
     super(pos);
-    this.type = Type.KING;
-    this.score = 300;
+    setType(Type.KING);
+    setScore(300);
   }
   public King(int x, int y){
     super(x, y);
-    this.type = Type.KING;
-    this.score = 300;
+    setType(Type.KING);
+    setScore(300);
   }
   public boolean isValidMove(Position newPos){
-    int xdif=Math.abs(newPos.getPosx()-position.getPosx());
-    int ydif=Math.abs(newPos.getPosy()-position.getPosy());
+    int xdif=Math.abs(newPos.getPosx()-getPos().getPosx());
+    int ydif=Math.abs(newPos.getPosy()-getPos().getPosy());
     return (xdif==1||ydif==1);
   }
 }
