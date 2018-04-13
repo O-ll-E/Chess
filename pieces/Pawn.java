@@ -20,5 +20,9 @@ public class Pawn extends Pieces{
     setType(Type.PAWN);
     setScore(1);
   }
-  // TODO: add isValidMove()
+
+  public boolean isValidMove(Position newPos){
+    int ydif = newPos.getPosy()-getPos().getPosy();
+    return ydif == -1 || (ydif == -2 && getMoveCount() == 0);
+  }
 }
