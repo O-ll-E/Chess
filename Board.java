@@ -30,6 +30,7 @@ public class Board{
       System.out.println("");
     }
   }
+  //TODO: void draw();
   public static void main(String[] args) {
     Board x = new Board(8);
     x.fillBoard();

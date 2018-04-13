@@ -108,5 +108,5 @@ public abstract class Pieces{
     moveCount++;
   }
   //Movement,Capturing,...
-
+  //TODO: draw();
 }
