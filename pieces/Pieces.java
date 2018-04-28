@@ -107,6 +107,6 @@ public abstract class Pieces{
     }
     moveCount++;
   }
-  //Movement,Capturing,...
+  //Movement,Capturing,Obstructed...
   //TODO: draw();
 }
