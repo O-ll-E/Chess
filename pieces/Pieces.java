@@ -7,6 +7,7 @@ public abstract class Pieces{
   private int moveCount = 0;
   private Position position;
   private Type type;
+  private PImage Sprite;
   //Type,Player,...
 
   /**
